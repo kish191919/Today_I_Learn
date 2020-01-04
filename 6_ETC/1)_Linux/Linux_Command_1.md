@@ -91,3 +91,9 @@ wc *.sql
 wc example_1.sql |awk '{print $1}'
 ``````
 <img width="700" alt="1-3-9" src="https://user-images.githubusercontent.com/26552500/71760148-a8c1f400-2e86-11ea-9e77-9390d58588c4.png">
+
+``````
+wc -l example_1.sql | cut -d ' ' -f 6
+``````
+<img width="738" alt="Screen Shot 2020-01-04 at 12 21 34 AM" src="https://user-images.githubusercontent.com/26552500/71760232-55e93c00-2e88-11ea-9adf-7137a2cc4ff3.png">
+
