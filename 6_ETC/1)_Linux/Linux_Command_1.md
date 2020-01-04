@@ -1,4 +1,4 @@
-## Linux Command
+## Linux Command [Head / Tail / WC ]
 
 ### 1. Head
 
