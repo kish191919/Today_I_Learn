@@ -40,7 +40,7 @@ nl -ba example_1.sql |tail
 ``````
 cat example_1.sql | sort
 ``````
-<img width="834" alt="Screen Shot 2020-01-04 at 11 08 33 PM" src="https://user-images.githubusercontent.com/26552500/71775285-724eac80-2f4c-11ea-8bbe-bf8d57567aa5.png">
+<img width="670" alt="Screen Shot 2020-01-04 at 11 38 43 PM" src="https://user-images.githubusercontent.com/26552500/71775339-3b2ccb00-2f4d-11ea-9c7c-df39014c2233.png">
 
 Delimiter is ':' and 3번째 컬럼을 숫자로 변환 후 sort
 ``````
