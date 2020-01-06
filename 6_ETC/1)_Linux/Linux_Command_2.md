@@ -57,7 +57,7 @@ cat example_1.sql | sort -t: -k 3,3 -k 1,1 -n --debug
 ``````
 ls -al | sort -k 5 -n
 ``````
-<img width="545" alt="Screen Shot 2020-01-05 at 8 51 37 PM" src="https://user-images.githubusercontent.com/26552500/71791093-a59f4300-3001-11ea-86bb-be74ed38a3b9.png">
+<img width="807" alt="Screen Shot 2020-01-05 at 6 33 09 PM" src="https://user-images.githubusercontent.com/26552500/71791196-0d558e00-3002-11ea-86ae-c5c77652d47a.png">
 
 
 ## 3. Uniq
@@ -67,7 +67,8 @@ ls -al | sort -k 5 -n
 ``````
 uniq aa | nl
 ``````
-<img width="807" alt="Screen Shot 2020-01-05 at 6 33 09 PM" src="https://user-images.githubusercontent.com/26552500/71791094-a59f4300-3001-11ea-8c44-76a2f802babf.png">
+<img width="545" alt="Screen Shot 2020-01-05 at 8 51 37 PM" src="https://user-images.githubusercontent.com/26552500/71791205-18a8b980-3002-11ea-9a39-4814a38fc17d.png">
+
 
 
 정렬후 연속으로 중복된 것 제거 (명령어 순서 중요)
@@ -75,15 +76,14 @@ uniq aa | nl
 ``````
 sort aa | uniq | nl
 ``````
-<img width="869" alt="Screen Shot 2020-01-05 at 9 20 01 PM" src="https://user-images.githubusercontent.com/26552500/71791108-b780e600-3001-11ea-9814-a3947a938c91.png">
-
+<img width="615" alt="Screen Shot 2020-01-05 at 8 53 51 PM" src="https://user-images.githubusercontent.com/26552500/71791215-25c5a880-3002-11ea-916b-cd971e6928ec.png">
 
 추가로 대소문자 제거 ( sort -f 옵션 : 대소문자 무시, uniq -i : 대소문자 무시)
 
 ``````
 sort aa -f | uniq -i | nl
 ``````
-<img width="669" alt="Screen Shot 2020-01-05 at 8 57 11 PM" src="https://user-images.githubusercontent.com/26552500/71791109-b780e600-3001-11ea-8721-a6b198815bdb.png">
+<img width="669" alt="Screen Shot 2020-01-05 at 8 57 11 PM" src="https://user-images.githubusercontent.com/26552500/71791227-31b16a80-3002-11ea-8f88-5a202db3cf5b.png">
 
 
 파일 생성 월만 표시
@@ -92,4 +92,4 @@ sort aa -f | uniq -i | nl
 ls -al | sort -k 6 | awk '{print $6}' 
 ls -al | sort -k 6 | awk '{print $6}' | uniq
 ``````
-<img width="615" alt="Screen Shot 2020-01-05 at 8 53 51 PM" src="https://user-images.githubusercontent.com/26552500/71791111-b780e600-3001-11ea-97fb-90cbcc98c918.png">
+<img width="869" alt="Screen Shot 2020-01-05 at 9 20 01 PM" src="https://user-images.githubusercontent.com/26552500/71791234-38d87880-3002-11ea-8e2a-774fb4a48219.png">
