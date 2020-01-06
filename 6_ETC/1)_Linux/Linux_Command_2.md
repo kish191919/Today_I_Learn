@@ -51,3 +51,45 @@ Delimiter is ':' and 3번째 컬럼 and then 1번째 컬럼을 숫자로 변환 
 ``````
 cat example_1.sql | sort -t: -k 3,3 -k 1,1 -n --debug
 ``````
+
+파일 사이즈별 정렬
+
+``````
+ls -al | sort -k 5 -n
+``````
+
+
+
+## 3. Uniq
+
+연속으로 중복된 것 제거
+
+``````
+uniq aa | nl
+``````
+
+
+
+정렬후 연속으로 중복된 것 제거 (명령어 순서 중요)
+
+``````
+sort aa | uniq | nl
+``````
+
+
+
+추가로 대소문자 제거 ( sort -f 옵션 : 대소문자 무시, uniq -i : 대소문자 무시)
+
+``````
+sort aa -f | uniq -i | nl
+``````
+
+
+
+파일 생성 월만 표시
+
+``````
+ls -al | sort -k 6 | awk '{print $6}' 
+ls -al | sort -k 6 | awk '{print $6}' | uniq
+``````
+
