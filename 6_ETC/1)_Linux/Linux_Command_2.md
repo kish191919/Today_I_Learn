@@ -1,4 +1,4 @@
-# Linux_Command_2 
+# Linux_Command_2 [NL, SORT, UNIQ, CUT]
 
 ## 1. NL
 
@@ -93,3 +93,20 @@ ls -al | sort -k 6 | awk '{print $6}'
 ls -al | sort -k 6 | awk '{print $6}' | uniq
 ``````
 <img width="869" alt="Screen Shot 2020-01-05 at 9 20 01 PM" src="https://user-images.githubusercontent.com/26552500/71791234-38d87880-3002-11ea-8e2a-774fb4a48219.png">
+
+## 4. CUT
+
+공백을 기준으로 첫번째 컬럼을 나눔
+
+``````
+head hosts | cut -d ' ' -f1
+``````
+
+
+
+1 - 10 바이트만 출력
+
+``````
+ls -al | head| cut -b -10
+``````
+
