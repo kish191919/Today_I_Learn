@@ -101,7 +101,7 @@ ls -al | sort -k 6 | awk '{print $6}' | uniq
 ``````
 head hosts | cut -d ' ' -f1
 ``````
-
+<img width="729" alt="Screen Shot 2020-01-06 at 7 30 39 PM" src="https://user-images.githubusercontent.com/26552500/71861418-f1aebe00-30bb-11ea-917d-5d360f113a33.png">
 
 
 1 - 10 바이트만 출력
@@ -109,4 +109,6 @@ head hosts | cut -d ' ' -f1
 ``````
 ls -al | head| cut -b -10
 ``````
+<img width="837" alt="Screen Shot 2020-01-06 at 7 33 38 PM" src="https://user-images.githubusercontent.com/26552500/71861650-a943d000-30bc-11ea-9ee2-ebb34be475f9.png">
+
 
